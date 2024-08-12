@@ -26,7 +26,7 @@ jobs:
             jq 'del(.repositories)' "$FILE" > temp.json && mv temp.json "$FILE"
           else
             echo "repositories object not found in composer.json, no changes made."
-        fi
+          fi
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
