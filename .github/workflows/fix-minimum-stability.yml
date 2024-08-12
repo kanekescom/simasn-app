@@ -1,0 +1,34 @@
+name: Fix Minimum Stability
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  php-code-styling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check and Fix minimum-stability
+        run: |
+          FILE="composer.json"
+
+          if grep -q '"minimum-stability": "stable"' "$FILE"; then
+            echo "minimum-stability is already set to stable."
+          else
+            echo "Fixing minimum-stability to stable."
+            sed -i 's/"minimum-stability": "[^"]*"/"minimum-stability": "stable"/' "$FILE"
+          fi
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Fix minimum stability
