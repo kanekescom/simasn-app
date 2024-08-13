@@ -22,6 +22,7 @@
     "require": {
         "php": "^8.2",
         "kanekescom/laravel-siasn-api": "^2.0",
+        "kanekescom/laravel-siasn-referensi": "^2.3",
         "kanekescom/laravel-siasn-referensi-api": "^2.1",
         "kanekescom/laravel-siasn-simpeg-api": "^2.3",
         "laravel/framework": "^11.9",
