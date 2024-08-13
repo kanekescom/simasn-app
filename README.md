@@ -23,22 +23,54 @@ We also offer a professional version and are excited for you to try it out. This
 
 ## Installation
 
-You can install the package via composer:
+You can install the application via composer:
 
 ```bash
 composer create-project kanekescom/simasn
 ```
 
-Run migration
+However, it is more recommended to use the clone mechanism to easily receive updates from us by running the following command:
 
 ```bash
-php artisan migrate
+git clone https://github.com/kanekescom/simasn
+```
+
+Enter the installation directory:
+
+```bash
+cd simasn
+```
+
+Then run the composer command:
+
+```bash
+composer create-project
 ```
 
 Open the application using browser after run this command:
 
 ```bash
 php artisan serve
+```
+
+## Update
+
+Get updates through the repository with this command:
+
+```bash
+git pull origin main
+```
+
+Run the composer command:
+
+```bash
+composer install
+```
+
+Run the migration:
+
+```bash
+php artisan migrate
 ```
 
 ## Changelog
