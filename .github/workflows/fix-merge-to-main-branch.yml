@@ -1,0 +1,32 @@
+name: Fix Merge to Main Branch
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  php-code-styling:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Fix minimum-stability to stable
+        run: |
+          composer config minimum-stability stable
+
+      - name: Install kanekescom/larament dependencies as stable
+        run: |
+          composer install --no-interaction --no-update
+          composer update "kanekescom/larament" --prefer-stable --prefer-dist --no-interaction
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Fix merge to main branch
