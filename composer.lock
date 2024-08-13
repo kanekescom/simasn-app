@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7578e270b4e4d12639760a186448145",
+    "content-hash": "6c6bc2bc5c4bb5f5fd2c0ecf8e44d283",
     "packages": [
         {
             "name": "brick/math",
@@ -1245,6 +1245,108 @@
                 }
             ],
             "time": "2024-07-18T02:27:04+00:00"
+        },
+        {
+            "name": "kanekescom/laravel-siasn-referensi-api",
+            "version": "v2.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kanekescom/laravel-siasn-referensi-api.git",
+                "reference": "9242d135fe8b4bd8513b37074296d65f79076754"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kanekescom/laravel-siasn-referensi-api/zipball/9242d135fe8b4bd8513b37074296d65f79076754",
+                "reference": "9242d135fe8b4bd8513b37074296d65f79076754",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2",
+                "illuminate/contracts": "^10.0||^11.0",
+                "kanekescom/laravel-helperia": "^2.0",
+                "kanekescom/laravel-siasn-api": "^2.0",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-arch": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "spatie/laravel-ray": "^1.35"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kanekescom\\Siasn\\Referensi\\Api\\ReferensiServiceProvider"
+                    ],
+                    "aliases": {
+                        "ReferensiApi": "Kanekescom\\Siasn\\Referensi\\Api\\Facades\\Referensi"
+                    }
+                },
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kanekescom\\Siasn\\Referensi\\Api\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Achmad Hadi Kurnia",
+                    "email": "imachmadhadikurnia@gmail.com",
+                    "homepage": "https://linktr.ee/achmadhadikurnia",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SIASN REFERENSI REST API Client for Laravel",
+            "homepage": "https://github.com/kanekescom/laravel-siasn-referensi-api",
+            "keywords": [
+                "Sian",
+                "api",
+                "bkn",
+                "kanekescom",
+                "laravel",
+                "laravel-siasn-referensi-api",
+                "referensi-api",
+                "siasn-api"
+            ],
+            "support": {
+                "issues": "https://github.com/kanekescom/laravel-siasn-referensi-api/issues",
+                "source": "https://github.com/kanekescom/laravel-siasn-referensi-api/tree/v2.1.5"
+            },
+            "funding": [
+                {
+                    "url": "https://s.id/hadibmac",
+                    "type": "buymeacoffee"
+                },
+                {
+                    "url": "https://github.com/sponsors/achmadhadikurnia",
+                    "type": "github"
+                },
+                {
+                    "url": "https://s.id/hadipatreon",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://s.id/hadisaweria",
+                    "type": "saweria"
+                }
+            ],
+            "time": "2024-07-18T08:26:24+00:00"
         },
         {
             "name": "laravel/framework",
