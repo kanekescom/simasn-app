@@ -19,8 +19,15 @@
             "homepage": "https://linktr.ee/achmadhadikurnia"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./repositories/kanekescom/larament"
+        }
+    ],
     "require": {
         "php": "^8.2",
+        "kanekescom/larament": "^1.0@dev",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
     },
@@ -95,6 +102,6 @@
             "url": "https://s.id/hadisaweria"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
