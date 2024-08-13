@@ -24,6 +24,7 @@
         "kanekescom/laravel-siasn-api": "^2.0",
         "kanekescom/laravel-siasn-referensi": "^2.3",
         "kanekescom/laravel-siasn-referensi-api": "^2.1",
+        "kanekescom/laravel-siasn-simpeg": "^1.1",
         "kanekescom/laravel-siasn-simpeg-api": "^2.3",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9"
